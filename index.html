@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/png" href="./favicon.png">
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=1810 height=910></canvas>
+    <canvas id="unity-canvas" width=960 height=540></canvas>
     <script src="Build/MarioVsLuigi-WebGL.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -18,8 +18,8 @@
         companyName: "ipodtouch0218",
         productName: "NSMB-MarioVsLuigi",
         productVersion: "1.7.1.0-beta",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
